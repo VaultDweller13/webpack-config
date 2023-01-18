@@ -4,8 +4,8 @@
   "description": "Webpack 5 config, with TypeScript, Eslint, Prettier and Jest",
   "private": "true",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve --open",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
   }
 }

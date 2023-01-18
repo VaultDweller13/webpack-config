@@ -4,11 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
-  devtool: "eval-source-map",
-  devServer: {
-    static: "./dist",
-    historyApiFallback: true,
-  },
   module: {
     rules: [
       {
