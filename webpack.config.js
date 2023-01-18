@@ -4,7 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
-  devtool: "inline-source-map",
+  devtool: "eval-source-map",
+  devServer: {
+    static: "./dist",
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
