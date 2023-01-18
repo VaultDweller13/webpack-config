@@ -1,5 +1,6 @@
 const path = require("path");
 const { inflate } = require("zlib");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -28,8 +29,14 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+  ],
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
 };
