@@ -5,6 +5,8 @@ Webpack 5 configured to work with:
 - TypeScript
 - SASS/SCSS
 - ESLint
+  - airbnb-base,
+  - airbnb-typescript/base,
   - eslint:recommended
   - @typescript-eslint/recommended
   - @typescript-eslint/recommended-requiring-type-checking"
