@@ -1,6 +1,6 @@
 {
   "name": "webpack-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Webpack 5 config, with TypeScript, Eslint, Prettier and Jest",
   "private": "true",
   "scripts": {
