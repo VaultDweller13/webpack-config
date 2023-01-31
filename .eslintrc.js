@@ -21,6 +21,10 @@ module.exports = {
   },
   plugins: ["@typescript-eslint"],
   root: true,
-  ignorePatterns: ["*.js", "*.test.ts"],
-  rules: {},
+  ignorePatterns: ["*.js", "*.test.ts", "*.d.ts"],
+  rules: {
+    "no-console": "off",
+    "@typescript-eslint/lines-between-class-members": "off",
+    "class-methods-use-this": "off",
+  },
 };
