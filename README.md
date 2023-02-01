@@ -4,6 +4,7 @@ Webpack 5 configured to work with:
 
 - TypeScript
 - SASS/SCSS
+- Jest
 - ESLint
   - eslint:recommended
   - @typescript-eslint/recommended
@@ -17,3 +18,6 @@ Start dev-server:
 
 Build:  
 `npm run build`
+
+Test:  
+`npm run test`
